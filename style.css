@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Rock+Salt&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Reenie Beanie", cursive;
+  margin: 0 auto;
+  padding-block: 10px;
+  width: 600px;
+  background-image: linear-gradient(45deg, rgba(209, 176, 232, 0.628), rgba(42, 255, 230, 0.546));
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+h1 {
+  display: inline-block;
+  font-size: 80px;
+  color: aqua;
+  margin: 0;
+  text-shadow: 10px 10px 10px rgba(145, 139, 139, 0.62);
+  font-family: "Rock Salt", cursive;
+  text-decoration: underline 5px violet;
+  vertical-align: baseline;
+}
+img {
+  display: inline-block;
+  margin-inline-start: 20px;
+}
+main {
+  height: 100vh;
+}
+#lista {
+  margin-block: 80px;
+}
+#newList {
+  display: block;
+  margin: 5px auto;
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  border: 4px dotted aqua;
+  box-shadow: 5px 5px 5px rgb(136, 134, 134);
+}
+
+#addButton {
+  margin: 10px auto;
+  height: 60px;
+  width: 300px;
+  background-color: aqua;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: violet;
+  box-shadow: 5px 5px 5px rgb(136, 134, 134);
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  width: 80%;
+  font-size: 50px;
+  text-align: left;
+  padding-inline-start: 10px;
+  align-self: center;
+}
+
+.buttonStyle {
+  height: 50px;
+  width: 50px;
+  background-image: url("./Assets/trash-outline.svg");
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(136, 134, 134);
+  background-color: rgba(234, 98, 244, 0.5);
+  cursor: pointer;
+}
+
+.formStyle {
+  margin-block: 60px;
+  display: flex;
+  align-content: center;
+}
+
+.ckeckBoxStyle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  box-shadow: 3px 3px 3px rgb(136, 134, 134);
+  border: 1px solid grey;
+  cursor: pointer;
+}
