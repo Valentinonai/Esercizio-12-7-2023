@@ -1,6 +1,6 @@
 let inserimento;
 const ul = document.getElementById("startList");
-let cont = 0;
+let cont = 0; //! CONTATORE PER ATTRIBUIRE UN NOME AGLI ELEMENTI
 const addList = (Lista) => {
   cont += 1;
   console.log(cont);
@@ -9,16 +9,16 @@ const addList = (Lista) => {
   console.log(inserimento.value);
 
   const form = document.createElement("form");
-  const li = document.createElement("li");
+  const li = document.createElement("li"); //! CREAZIONE ELEMENTI CON TIPI,NOMI E CLASSI
   const check = document.createElement("input");
   check.type = "checkbox";
   check.name = cont;
-  check.addEventListener("change", checked);
+  check.addEventListener("change", checked); //? AGGIUNTO EVENTO SELEZIONE CHECKBOX
   check.classList.add("ckeckBoxStyle");
   form.classList.add("formStyle");
   const delate = document.createElement("button");
   delate.classList.add("buttonStyle");
-  delate.addEventListener("click", cancella);
+  delate.addEventListener("click", cancella); //?   AGGIUNTO EVENTO CLICK
   delate.name = cont;
   form.name = cont;
   form.appendChild(delate);
@@ -30,8 +30,8 @@ const addList = (Lista) => {
   console.dir(delate);
   Lista.target.reset();
 };
-console.dir(ul);
 
+//!FUNZIONE CHE CANCELLA UNA RIGA DELLA LISTA
 const cancella = (event) => {
   const form = document.getElementsByTagName("form");
   event.preventDefault();
@@ -42,7 +42,7 @@ const cancella = (event) => {
     }
   }
 };
-
+//!FUNZIONE CHE DEPENNA UNA RIGA DELLA LISTA
 const checked = (event) => {
   const li = document.getElementsByTagName("li");
   event.preventDefault();
