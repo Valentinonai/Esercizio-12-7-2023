@@ -5,7 +5,7 @@ const addList = (Lista) => {
   cont += 1;
   console.log(cont);
   Lista.preventDefault();
-  inserimento = Lista.target.elements[0];
+  inserimento = Lista.target.elements[0]; //?PRENDO IL VALORE DEL CAMPO TESTO INSERITO
   console.log(inserimento.value);
 
   const form = document.createElement("form");
@@ -22,7 +22,7 @@ const addList = (Lista) => {
   delate.name = cont;
   form.name = cont;
   form.appendChild(delate);
-  form.appendChild(check);
+  form.appendChild(check); //! SI POTEVA SCRIVERE ul.INNERHTML= `<li onclick="FUNZION(event)"></li>`
   li.innerText = inserimento.value;
   li.name = cont;
   form.appendChild(li);
