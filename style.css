@@ -25,7 +25,7 @@ img {
   margin-inline-start: 20px;
 }
 main {
-  height: 100vh;
+  height: 100%;
 }
 #lista {
   margin-block: 80px;
@@ -91,3 +91,9 @@ li {
   border: 1px solid grey;
   cursor: pointer;
 }
+
+/* #inserimento {
+  position: -webkit-sticky; /* Safari */
+/* position: sticky;
+  top: 0;
+} */
