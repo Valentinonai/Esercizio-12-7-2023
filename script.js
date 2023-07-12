@@ -1,3 +1,10 @@
+//TODO -------Ridimensioniamo la pagina al caricamento----------
+window.onload = function () {
+  console.log(window.innerHeight);
+  window.innerHeight = 700;
+  console.log(window.innerHeight);
+};
+
 let inserimento;
 const addList = (Lista) => {
   const ul = document.getElementById("startList");

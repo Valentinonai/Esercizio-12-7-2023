@@ -19,6 +19,7 @@ h1 {
   font-family: "Rock Salt", cursive;
   text-decoration: underline 5px violet;
   vertical-align: baseline;
+  z-index: 2;
 }
 img {
   display: inline-block;
@@ -28,7 +29,7 @@ main {
   height: 100%;
 }
 #lista {
-  margin-block: 80px;
+  margin-block: 20px;
 }
 #newList {
   display: block;
@@ -91,9 +92,19 @@ li {
   border: 1px solid grey;
   cursor: pointer;
 }
-
-/* #inserimento {
+/*TODO ------Inserimento della scroll bar quando la lista si allunga mantenendo in primo piano l' INPUT e il BOTTONE-----*/
+.Scroll {
   position: -webkit-sticky; /* Safari */
-/* position: sticky;
+  position: sticky;
   top: 0;
-} */
+}
+#Inserimento {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 200px;
+}
+
+#lista {
+  height: 450px;
+  overflow: scroll;
+}
