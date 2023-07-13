@@ -19,8 +19,8 @@ const addList = (Lista) => {
   check.classList.add("ckeckBoxStyle");
   form.classList.add("formStyle");
   delate.classList.add("buttonStyle");
-  delate.addEventListener("click", cancella); //?   AGGIUNTO EVENTO CLICK
-  form.appendChild(delate);
+  delate.addEventListener("click", cancella); //?   AGGIUNTO EVENTO CLICK Avrei potuto scrivere delate.onclick=cancella
+  form.appendChild(delate); //? e fa la stessa di addEventListener tranne che non si possono richiamare più funzioni con lo stesso click
   form.appendChild(check); //! SI POTEVA SCRIVERE ul.INNERHTML+= `<li onclick="FUNZION(event)"></li>`
   li.innerText = inserimento.value;
   form.appendChild(li);
